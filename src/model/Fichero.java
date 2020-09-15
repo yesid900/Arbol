@@ -13,21 +13,22 @@ public Fichero(String path) throws IOException{
 bw = new BufferedWriter(new FileWriter(path));
 br = new BufferedReader(new FileReader(path));
 }
-//método que escribe los datos en el fichero
+//mÃ©todo que escribe los datos en el fichero
 public void writeFile(String data) throws IOException{
 PrintWriter pw = new PrintWriter(bw);
 pw.println(data);
 }
-//método que lee una linea del fichero
+//mÃ©todo que lee una linea del fichero
 public String readFile() throws IOException{
 return br.readLine();
 }
-//método que cierra el fichero de lectura
+//mÃ©todo que cierra el fichero de lectura
 public void closeRead() throws IOException{
 br.close();
 }
-//método que cierra el fichero de escritura
+//mÃ©todo que cierra el fichero de escritura
 public void closeWrite() throws IOException{
 bw.close();
+  //prueba git hub
 }
 }
